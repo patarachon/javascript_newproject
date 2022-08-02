@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
+    <head>
+        <script>
+            function greeting(){
+                document.getElementById('demo').innerHTML='Hello patara';
+                let name=prompt("plase input your  name")
+                window.alert('Hello '+name);
+                document.getElementById('demo').innerHTML='Hello '+name;
+            }
+
+            function changeToRed(){
+                document.getElementById('demo').style.color='red' ;
+                document.getElementById('demo').style.fontSize='50px' ;
+            }
+
+            function changeTocat(){
+                document.getElementById('pic').src='https://www.petsayhi.com/wp-content/uploads/2022/01/Top-7-pet-cat-breeds-3-scaled.jpg';
+                document.getElementById('pic').width="200";
+                
+            }
+
+            function changeTodog(){
+                document.getElementById('pic').src='https://static.thairath.co.th/media/dFQROr7oWzulq5Fa4u0YhLKiDxsd9SJzhOgnJBrNJdI8TIgXYL2SYUqzV3k4hxCfnH5.jpg';
+                document.getElementById('pic').width="200";
+                
+            }
+        </script>
+    </head>
 <body>
-<img src="https://bts.fandom.com/wiki/RJ">\
-<img src="https://bts.fandom.com/wiki/RJ">
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+
+<h2>My first javascript</h2>
+<img id="pic" width="200" src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa4u0YhLKiDxsd9SJzhOgnJBrNJdI8TIgXYL2SYUqzV3k4hxCfnH5.jpg">
+
+<button type="button"
+onclick="changeTodog()">dog</button>
+
+<button type="button"
+onclick="changeTocat()">cat</button>
+
+<button type="button"
+onclick="greeting()">
+Click me to display Date and Time.</button>
+
+<button type="button"
+onclick="changeToRed()">
+Click to change the color of text.</button>
+
+<button type="button"
+onclick="add_image()">
+Click to add image.</button>
+
+<!-- window.alert ใช้สำหรับให้ขึ้นโชว์บนหน้าเว็บแบบเด้งขึ้นมาด้านบน -->
+
+<p id="demo"></p>
 
 </body>
-</html>
+</html> 
